@@ -2,7 +2,6 @@
 Converts number into words (American English).
 
 # Output samples:
-===============
 
 55459 => fifty-five thousand, four hundred fifty-nine
 
