@@ -1,23 +1,15 @@
 # NumberToWords
 Converts number into words (American English).
 
-Output samples:
+# Output samples:
 ===============
 
-fifty-five thousand, four hundred fifty-nine
+55459 => fifty-five thousand, four hundred fifty-nine
 
-fifty-five thousand, six hundred ninty-three
+55693 => fifty-five thousand, six hundred ninty-three
 
-fifty-five thousand, nine hundred twenty-seven
+56395 => fifty-six thousand, three hundred ninty-five
 
-fifty-six thousand, one hundred sixty-one
+2343219 => two million, three hundred forty-three thousand, two hundred nineteen
 
-fifty-six thousand, three hundred ninty-five
-
-fifty-six thousand, six hundred twenty-nine
-
-four hundred sixty-seven thousand, three hundred thirty-two
-
-two million, three hundred forty-three thousand, two hundred nineteen
-
-forty-six million, seven hundred ninty-three thousand, four hundred thirty-one
+46793431 => forty-six million, seven hundred ninty-three thousand, four hundred thirty-one
