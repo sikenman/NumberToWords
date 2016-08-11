@@ -1,6 +1,5 @@
 /**
  * Converts number into words (American English).
- *
  * @author Siken Man Singh Dongol
  **/
 public class NumberToWords {
@@ -13,8 +12,7 @@ public class NumberToWords {
 			"fifteen", "sixteen", "seventeen", "eighteen", "nineteen" };
 
 	private static String[] Tens = { "", "",
-			"twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty",
-			"ninty" };
+			"twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninty" };
 
 	private static String[] MoneyVal = { "",
 			"thousand ", "million ", "billion ", "trillion ", "quadrillion ",
@@ -42,19 +40,17 @@ public class NumberToWords {
 			block = Q + 1;
 		}
 
-		int X = 0; // X increases by 3, as there is difference of 3 digits in
-					// million, billion, trillion and so on
+		int X = 0;	// X increases by 3, as there is difference of 3 digits in
+				// million, billion, trillion and so on
 		for (int i = block; i >= 1; i--) {
 			String hundred;
 			if (i == block && R > 0) {
 				hundred = Hundred(in.substring(0, R));
 				if(hundred.equals("err")) return "Please enter a valid number.";
-
 				out =  hundred + " " + MoneyVal[i - 1];
 			} else {
 				hundred = Hundred(in.substring(R + X, R + X + 3));
 				if(hundred.equals("err")) return "Please enter a valid number.";
-
 				out +=  hundred + " " + MoneyVal[i - 1];
 				X = X + 3;
 			}
@@ -62,7 +58,7 @@ public class NumberToWords {
 		return out.trim();
 	}
 
-	// Method that gives Hundred in words [ eg. 532 => Five Hundred Thirty Two
+	// Method that gives Hundred in words [ eg. 532 => Five Hundred Thirty Two ]
 	private static String Hundred(String in) {
 
 		int strLen = in.length();
